@@ -2,10 +2,21 @@
 #include "main.h"
 using namespace std;
 
-int main(){
+checkAns(){
+    switch (input)
+    {
+        case Fire: cout << "Your type is Fire";
+        break;
 
-    int input;
-    bool flag = true;
+        case Water: cout << "Your type is Water";
+        break;
+
+        case Earth: cout << "Your type is Earth";
+    }
+
+}
+
+int main(){
 
     enum Types
         { Fire = 1, Water, Earth};
@@ -23,15 +34,6 @@ int main(){
             
 
     }
-    switch (input)
-    {
-        case Fire: cout << "Your type is Fire";
-        break;
-
-        case Water: cout << "Your type is Water";
-        break;
-
-        case Earth: cout << "Your type is Earth";
-    }
+   checkAns();
 }
 ;
